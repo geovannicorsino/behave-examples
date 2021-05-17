@@ -1,5 +1,6 @@
 import os
 import smtplib, ssl
+
 from dotenv import load_dotenv
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -24,8 +25,5 @@ def send_email():
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
             server.login(os.environ.get("SENDER"), os.environ.get("PASSWORD"))
             server.sendmail(
-                os.environ.get("RECEIVER"), os.environ.get("RECEIVER"), message.as_string()
+                os.environ.get("SENDER"), os.environ.get("RECEIVER"), message.as_string()
             )
-
-
-send_email()
