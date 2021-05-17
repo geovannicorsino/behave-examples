@@ -1,7 +1,7 @@
 from behave import given, when, then
 
 from src.rest.features.dictionary import endpoints
-from src.rest.implementaion.products import validate_price_products
+from src.rest.factory.products import validate_price_products
 
 
 @given(u'what i have the "{endpoint}"')
