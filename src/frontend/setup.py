@@ -13,6 +13,6 @@ def setup_browser(context):
         driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=path)
         driver.maximize_window()
         driver.implicitly_wait(time_to_wait=10)
-        return driver, "Chrome"
+        return driver
     else:
-        return None, None
+        return None
