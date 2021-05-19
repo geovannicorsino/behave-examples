@@ -1,9 +1,7 @@
-from time import sleep
-
 from selenium.webdriver.common.by import By
 
 from src.frontend.features.dictionary import URL
-from src.frontend.setup import setup_browser
+from src.frontend.features.factory.fake_data import User
 from src.frontend.utils.tools import send_keys, click
 
 
@@ -18,6 +16,6 @@ class MyPilasLogin:
         self.context.browser.get(f"{self.context.url_domain}{URL.get(page)}")
 
     def fill_data(self):
-        send_keys(self.context, "geovanni@gmail.com", self.field_email)
-        send_keys(self.context, "12345678", self.field_password)
-        click(self.context, self.field_password)
+        send_keys(self.context, User().email, self.field_email)
+        send_keys(self.context, User().password, self.field_password)
+        click(self.context, self.button_enter)

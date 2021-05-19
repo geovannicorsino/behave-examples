@@ -14,6 +14,11 @@ def step_impl(context):
     context.page.fill_data()
 
 
+@then(u'i did my signature on MyPilas')
+def step_impl(context):
+    ...
+
+
 @then(u'i´m online on MyPilas')
 def step_impl(context):
     ...

@@ -1,4 +1,5 @@
 import logging
+
 from selenium.common.exceptions import TimeoutException, WebDriverException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
@@ -33,6 +34,14 @@ def click(context, selector):
     element, original_style = wait(context, element_to_be_clickable(selector), selector)
     element.click()
     # take_screenshot(context)
+
+
+def select(context, selector, item):
+    element, original_style = wait(context, element_to_be_clickable(selector), selector)
+    all_options = element.find_elements_by_tag_name("option")
+    for option in all_options:
+        option.get_attribute(item)
+        option.click()
 
 
 def send_keys(context, keys, selector):

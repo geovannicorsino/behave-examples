@@ -1,6 +1,8 @@
 from faker import Faker
 
 
-class UserLogin:
+class User:
     def __init__(self):
         self.email = Faker().email()
+        self.name = Faker().name()
+        self.password = Faker().password()
