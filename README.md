@@ -1,37 +1,52 @@
-# Behave Examples
+## **BEHAVE EXAMPLES**
 
-- How to configure
+Simple examples to start with Behave and BDD
+
+- Prerequisites
 - How to run
+- Tech Stack
 
-## How to cofigure
+### 🚧 **PREREQUISITES**
 
-- First you need to run on your terminal
+- Clone the project
+
+```bash
+git clone https://github.com/geovannicorsino/behave-examples.git
+```
+
+- Install the dependencies
 
 ```bash
 pip install requirements.txt
 ```
 
-## How to run
+### 🚀 **HOW TO RUN**
 
-#### On your terminal you can run
+This project has different examples, you need to inform the example
 
 -
-    1. If you want execute a rest example
+    1. If you want to run a rest example
 
 ```bash
 behave src\rest\features\xml_example.feature
 ```
 
 -
-    2. If you want execute a simple program example
+    2. If you want to run a simple program example
 
 ```bash
 behave src\simple_programs\features\count_money.feature
 ```
 
 -
-    3. If you want execute a frontend example
+    3. If you want to run a front-end example
 
 ```bash
 behave src\frontend\features\mypilas.feature
 ```
+
+### 🛠️  **TECH STACK**
+
+- [Python](https://www.python.org/)
+- [Behave](https://behave.readthedocs.io/en/stable/#)
+- [Selenium](https://www.selenium.dev/)

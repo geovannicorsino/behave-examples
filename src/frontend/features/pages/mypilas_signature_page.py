@@ -1,9 +1,6 @@
-from time import sleep
-
 from selenium.webdriver.common.by import By
 
 from src.frontend.features.dictionary import URL
-from src.frontend.features.factory.fake_data import User
 from src.frontend.utils.tools import send_keys, click, select
 
 
@@ -25,14 +22,13 @@ class MyPilasSignature:
         self.context.browser.get(f"{self.context.url_domain}{URL.get(page)}")
 
     def fill_data(self):
-        user = User()
-        send_keys(self.context, user.name, self.field_social)
+        send_keys(self.context, self.context.user.name, self.field_social)
         send_keys(self.context, "95.178.703/0001-10", self.field_cnpj)
         send_keys(self.context, "23052020", self.field_calendar)
-        send_keys(self.context, user.name, self.field_responsible)
-        send_keys(self.context, user.email, self.field_email)
+        send_keys(self.context, self.context.user.name, self.field_responsible)
+        send_keys(self.context, self.context.user.email, self.field_email)
         select(self.context, self.select_state, "Minas Gerais")
         select(self.context, self.select_city, "Uberlândia")
-        send_keys(self.context, user.password, self.field_password)
-        send_keys(self.context, user.password, self.field_confirm_password)
+        send_keys(self.context, self.context.user.password, self.field_password)
+        send_keys(self.context, self.context.user.password, self.field_confirm_password)
         click(self.context, self.button_enter)

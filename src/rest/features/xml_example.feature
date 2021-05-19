@@ -1,4 +1,4 @@
-Feature: guarantee that the values of the products are ok, just endpoints xml
+Feature: Validate product values
 
   Scenario Outline: validate that product prices are higher than zero
     Given what i have the "<endpoint>"
