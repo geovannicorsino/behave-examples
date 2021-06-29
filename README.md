@@ -17,7 +17,7 @@ git clone https://github.com/geovannicorsino/behave-examples.git
 - Install the dependencies
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 🚀 **HOW TO RUN**

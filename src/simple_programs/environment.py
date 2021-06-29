@@ -1,4 +1,5 @@
-# BEHAVE_DEBUG_ON_ERROR = True
+from src.report.report_service import report
+
 
 def before_all(context):
     context.scenarios = []
@@ -6,3 +7,7 @@ def before_all(context):
 
 def after_scenario(context, scenario):
     context.scenarios.append(scenario)
+
+
+def after_all(context):
+    report(context.scenarios)

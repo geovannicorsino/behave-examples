@@ -1,6 +1,6 @@
 from behave import given, when, then
 
-from src.simple_programs.features.steps.note import withdraw
+from src.simple_programs.steps.note import withdraw
 
 
 @given('what i have {value}')

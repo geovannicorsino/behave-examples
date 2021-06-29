@@ -6,6 +6,6 @@ MYPiLAS_SIGNATURE = "MyPilas Signature"
 MYPILAS_URL = "https://mypilas-geovanni-geovannicorsino.vercel.app/"
 
 URL = dict({
-    (MYPiLAS_LOGIN, "/login.html"),
-    (MYPiLAS_SIGNATURE, "/assine.html")
+    (MYPiLAS_LOGIN, f"{MYPILAS_URL}/login.html"),
+    (MYPiLAS_SIGNATURE, f"{MYPILAS_URL}/assine.html")
 })

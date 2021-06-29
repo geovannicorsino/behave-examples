@@ -1,6 +1,6 @@
 from behave import given, when, then
 
-from src.rest.features.dictionary import endpoints
+from src.rest.factory.dictionary import endpoints
 from src.rest.factory.products import validate_price_products
 
 

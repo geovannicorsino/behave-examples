@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 
-from src.frontend.features.dictionary import URL
 from src.frontend.utils.tools import send_keys, click, select
 
 
@@ -17,9 +16,6 @@ class MyPilasSignature:
         self.select_state = (By.XPATH, "//select[@name='estado']")
         self.select_city = (By.XPATH, "//select[@id='cidade']")
         self.button_enter = (By.XPATH, "//input[@value='Assinar MyPilas']")
-
-    def open(self, page=None):
-        self.context.browser.get(f"{self.context.url_domain}{URL.get(page)}")
 
     def fill_data(self):
         send_keys(self.context, self.context.user.name, self.field_social)

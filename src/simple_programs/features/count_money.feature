@@ -1,5 +1,6 @@
 Feature: Simples programs
 
+  @QA.Geovanni
   Scenario Outline: i need count the number of notes for <value>
     Given what i have <value>
     When i count the minimun number of notes

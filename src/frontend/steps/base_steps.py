@@ -1,12 +1,13 @@
 from behave import given, when, then
 
-from src.frontend.features.pages.base_page import BasePage
+from src.frontend.dictionary import URL
+from src.frontend.pages.base_page import BasePage, Page
 
 
 @given(u'what i´m the "{page}"')
 def step_impl(context, page):
     context.page = BasePage(context).get_page(page=page)
-    context.page.open(page)
+    Page(context, URL.get(page)).open()
 
 
 @when(u'to fill in the data')
