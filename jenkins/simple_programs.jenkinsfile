@@ -1,13 +1,13 @@
 pipeline {
     agent { dockerfile true }
-    stages {
-        stage('Tests') {
-            steps {
-                {
+       stage('Tests') {
+           steps {
+               {
                     sh 'behave src/simple_programs/features'
-                }
-            }
-        }
+               }
+           }
+       }
+
     }
     post {
         always{
