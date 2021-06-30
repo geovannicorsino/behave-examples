@@ -7,26 +7,16 @@ U
 %src/rest/features/xml_example.feature,8\4\8470686974e45f70b1107e03afbe4ba2c3b1cb89
 >
 src/qa_team.py,2\1\21133de9fb31afd0b022a36b174eb4d1985f5870
-[
-+src/simple_programs/features/environment.py,8\b\8b2492c962815c2e4015b3e1bf1074ce710f5965
 `
 0src/simple_programs/features/count_money.feature,5\9\59039a322bebde19d67d2f9a4fc57ba012517642
 Q
 !src/frontend/factory/fake_data.py,0\e\0e6000e3c8227c7e2151295e45dd9e202a9af16d
-P
- src/rest/features/environment.py,3\9\3926529e010301d6c14a58261b87f50beaed42ea
-`
-0src/simple_programs/features/steps/base_steps.py,b\1\b1c16e3208fc448cf11bf972daf026d99915d235
 U
 %src/frontend/features/mypilas.feature,b\9\b94ec8dc763dc232dcf91081dc1a055a6458196b
 \
 ,src/frontend/pages/mypilas_signature_page.py,a\8\a8f1881122cc463536bd5f0f6e553db99dde5a95
 N
 src/graphql/factory/country.py,4\a\4a34c8bb324abb69053af20372a1368771410bcf
-K
-src/frontend/utils/setup.py,8\1\81ef4a3bfdd9931ecbd27e1e213bf77d505f3ff5
-K
-src/frontend/environment.py,9\e\9eeba7d8b0cbb7c56c4fa152ad19f23f33c9ae70
 J
 src/frontend/dictionary.py,4\b\4b2a7f5393be1c78f8ef52c502d61bb612273ab9
 P
