@@ -1,16 +1,10 @@
 pipeline {
     agent { dockerfile true }
-       stage('Tests') {
-           steps {
-               {
-                    sh 'behave src/simple_programs/features'
-               }
-           }
-       }
-
-    }
-    post {
-        always{
-            junit 'TESTS*.xml'
+    stages {
+        stage('test') {
+            steps {
+                sh 'behave src/simple_programs/features'
+            }
         }
     }
+}
