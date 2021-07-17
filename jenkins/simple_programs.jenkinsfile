@@ -1,0 +1,10 @@
+pipeline {
+    agent { dockerfile true }
+    stages {
+        stage('test') {
+            steps {
+                sh 'behave src/simple_programs/features'
+            }
+        }
+    }
+}
