@@ -1,3 +1,4 @@
+from assertpy import assert_that
 from behave import given, when, then
 
 from src.simple_programs.steps.note import withdraw
@@ -15,4 +16,4 @@ def step_impl(context):
 
 @then(u'i will have {quantity} notes')
 def step_impl(context, quantity):
-    assert int(context.quantityNotes) == int(quantity)
+    assert_that(context.quantityNotes + 1).is_equal_to(int(quantity))

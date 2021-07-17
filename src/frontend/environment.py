@@ -13,9 +13,11 @@ def before_all(context):
 def before_scenario(context, scenario):
     context.url_domain = MYPILAS_URL
     context.user = User()
-    context.browser = setup_browser(context)
+    context.driver = setup_browser(context)
+    if hasattr(scenario.tags, 'skip'):
+        scenario.skip()
 
 
 def after_scenario(context, scenario):
-    context.browser.quit()
+    context.driver.quit()
     context.scenarios.append(scenario)

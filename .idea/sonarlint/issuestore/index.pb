@@ -1,31 +1,7 @@
 
-4
-.env,3\c\3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
-K
-src/frontend/utils/tools.py,3\7\370b96eea765fbe796dc8296358bebe964b840ea
-U
-%src/rest/features/xml_example.feature,8\4\8470686974e45f70b1107e03afbe4ba2c3b1cb89
+Q
+!src/simple_programs/steps/note.py,4\d\4d305b8779a360be4e82bbb09810f267396e9a34
+G
+src/rest/environment.py,b\7\b7157f865973c6a253c615187d68a1ce52d6e141
 >
 src/qa_team.py,2\1\21133de9fb31afd0b022a36b174eb4d1985f5870
-`
-0src/simple_programs/features/count_money.feature,5\9\59039a322bebde19d67d2f9a4fc57ba012517642
-Q
-!src/frontend/factory/fake_data.py,0\e\0e6000e3c8227c7e2151295e45dd9e202a9af16d
-U
-%src/frontend/features/mypilas.feature,b\9\b94ec8dc763dc232dcf91081dc1a055a6458196b
-\
-,src/frontend/pages/mypilas_signature_page.py,a\8\a8f1881122cc463536bd5f0f6e553db99dde5a95
-N
-src/graphql/factory/country.py,4\a\4a34c8bb324abb69053af20372a1368771410bcf
-J
-src/frontend/dictionary.py,4\b\4b2a7f5393be1c78f8ef52c502d61bb612273ab9
-P
- src/frontend/steps/base_steps.py,4\8\482c851710fb975b154483413fe6bc55fc1aec19
-X
-(src/frontend/pages/mypilas_login_page.py,1\4\146245791aadf978b6f6bae62f957007fa57c847
-O
-src/frontend/pages/base_page.py,b\c\bc4d5248edbcbcd4812b67fd50716fefc40215c9
-J
-src/report/report_email.py,5\7\57da59a0da54903526c281fdd54256803c920cb9
-L
-src/report/report_service.py,9\1\910bbbdab25b34c5abb1c897db1b15a6751d973c
