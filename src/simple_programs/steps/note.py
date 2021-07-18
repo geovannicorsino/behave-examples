@@ -21,9 +21,8 @@ notes = [
 def withdraw(money):
     total = 0
     for note in notes:
-        if money >= note.value:
-            while money >= note.value:
-                note.quantity += 1
-                money -= note.value
-                total += 1
+        while money >= note.value:
+            note.quantity += 1
+            money -= note.value
+            total += 1
     return total

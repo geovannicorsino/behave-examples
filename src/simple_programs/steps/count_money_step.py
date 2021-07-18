@@ -16,4 +16,4 @@ def step_impl(context):
 
 @then(u'i will have {quantity} notes')
 def step_impl(context, quantity):
-    assert_that(context.quantityNotes + 1).is_equal_to(int(quantity))
+    assert_that(context.quantityNotes).is_equal_to(int(quantity))
