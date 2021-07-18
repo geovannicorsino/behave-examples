@@ -1,7 +1,7 @@
-Feature: Simples programs
+Feature: Count money
 
   @QA.Geovanni
-  Scenario Outline: i need count the number of notes for <value>
+  Scenario Outline: i need count the minimum number of notes for <value>
     Given what i have <value>
     When i count the minimun number of notes
     Then i will have <quantity> notes
